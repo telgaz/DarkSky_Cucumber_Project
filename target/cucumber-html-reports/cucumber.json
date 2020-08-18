@@ -1,0 +1,113 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 655928345,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on darsky homepage",
+            "match": {
+              "location": "HomePageSD.verifyPageTitle()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5736141039,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Verify lowest and highest degrees of today on darksky page",
+        "description": "",
+        "id": "darksky-page-feature;verify-lowest-and-highest-degrees-of-today-on-darksky-page",
+        "after": [
+          {
+            "result": {
+              "duration": 187678307,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 586722285,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on today button on home page",
+            "match": {
+              "location": "HomePageSD.goToday()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 168093320,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I verify lowest temperature of the day on home page",
+            "match": {
+              "location": "HomePageSD.verifyMinTemp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92103892,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify highest temperature on darksky home page",
+            "match": {
+              "location": "HomePageSD.verifyMaxTemp()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@darksky"
+          }
+        ]
+      }
+    ],
+    "name": "Darksky page feature",
+    "description": "",
+    "id": "darksky-page-feature",
+    "keyword": "Feature",
+    "uri": "HomePage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@homepage"
+      }
+    ]
+  }
+]
